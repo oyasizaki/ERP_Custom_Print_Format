@@ -1,3 +1,5 @@
+/* this section is for removing all the padding and margin of the page  */
+
 .print-format {
     width: 8.5in;
     height: 0;
@@ -6,6 +8,9 @@
     padding: 0px;
 }
 
+/* this section is for adjusting content of the page  */
+
+
 .box {
   height: 80%;
   margin-top: 50px;
@@ -13,6 +18,9 @@
   margin-left: 10%;
   margin-right: 10%;
 }
+
+
+/* this section is for adjusting the footer to the bottom of the page  */
 
 .gap {
    height:385px;
