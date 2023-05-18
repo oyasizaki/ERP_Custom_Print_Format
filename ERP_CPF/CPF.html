@@ -9,9 +9,6 @@
 <body>
 
 
-<!-- this is for adding the header -->
-
-
 <div id="header-html">
 {% if doc.letter_head %}
 	<div class="letter-head" style="height: 10%;">
@@ -20,10 +17,6 @@
 {% endif %}
 </div>
 
-
-
-
-<!-- this is for adding the content -->
 
 
 <div class="box">
@@ -69,26 +62,23 @@
 
 </div>
 
-
-<!-- this is for adjusting the footer to the bootom of the page -->
-
-
 <div class="gap">
 </div>
 
-
-<!-- this is for adding the footer -->
-
-
-
-<div id="footer-html">
-{% if doc.letter_head %}
-	<div class="letter-head" style="height: 10%;">
-		{{ frappe.render_template(frappe.db.get_value("Letter Head", doc.letter_head, "content"), {"doc": doc}) }}
-	</div>
-{% endif %}
+<div class="footer">
+	<img src="/files/footer.jpeg" style="width: 100%;">
 </div>
 
+<!--<div id="footer-html" class="visible-pdf">-->
+<!--	{% if not no_letterhead and footer %}-->
+<!--	<div class="letter-head-footer">-->
+<!--		{{ footer }}-->
+<!--	</div>-->
+<!--	{% endif %}-->
+<!--	<p class="text-right small page-number visible-pdf">-->
+<!--		{{ _("Page {0} of {1}").format('<span class="page"></span>', '<span class="topage"></span>') }}-->
+<!--	</p>-->
+<!--</div>-->
 
 
 
